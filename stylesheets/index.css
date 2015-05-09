@@ -1,3 +1,4 @@
+/* general */
 html, body {
 	position: relative;
 	height: 100%;
@@ -7,12 +8,46 @@ body {
 	margin: 0;
 	font-family: 'Lato';
 }
+section, #front-page, footer {
+	display: none;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* front page */
+h3 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin: 10px;
+}
+h1 {
+	font-size: 50px;
+	margin: 10px;
+}
+#kotare {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+}
+
+/* waves */
 section {
 	position: relative;
 	margin: 0 auto;
 	width: 500px;
-	display: none;
 	overflow: auto;
+}
+h2 {
+	font-size: 25px;
+	margin: 30px;
+}
+.wave {
+	float: left;
+	width: 20%;
 }
 .character {
 	width: 20%;
@@ -24,42 +59,11 @@ section {
 	height: 1px;
 	margin-bottom: 1px;
 }
-.wave {
-	float: left;
-	width: 20%;
-}
-header {
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-h1 {
-	font-size: 50px;
-	margin: 10px;
-}
-h2 {
-	font-size: 25px;
-	margin: 30px;
-}
-h3 {
-	font-size: 20px;
-	letter-spacing: 2px;
-	margin: 10px;
-}
-p {
-	margin: 0;
-	font-size: 80px;
-}
-#kotare {
-	height: 100px;
-	width: 100px;
-	border-radius: 100%;
-}
+
+
+/* footer */
 footer {
 	margin-top: 30px;
-	display: none;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -73,11 +77,4 @@ a {
 }
 a:hover {
 	border-bottom-color: rgba(0,0,0,0);
-}
-#load {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	overflow: auto;
 }

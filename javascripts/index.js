@@ -14,7 +14,7 @@ $(window).load(function () {
 
 	clearInterval(loadInterval);
 	$('#load').remove();
-	$('header').fadeIn(3000);
+	$('#front-page').fadeIn(3000);
 	var ocean = new Ocean();
 
 	$(document).on('keyup', function (e) {

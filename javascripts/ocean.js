@@ -11,7 +11,7 @@ function Ocean () {
 }
 
 Ocean.prototype.initializeWaves = function () {
-  $('header').hide();
+  $('#front-page').hide();
   $('section').show();
   $('footer').show();
   for (var i = 0; i < this.colors.length; i++) {
