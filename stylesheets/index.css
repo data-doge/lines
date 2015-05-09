@@ -2,71 +2,61 @@ html, body {
 	height: 100%;
 	position: relative;
 }
-
 body {
 	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding: 20px;
 	font-family: 'Lato';
 }
-
 #main {
+	display: none;
 	position: relative;
 	width: 510px;
 	height: 510px;
 	margin: 20px auto;
 }
-
 .line {
 	height: 1px;
 	margin-bottom: 1px;
 }
-
-.column {
+.wave {
 	float: left;
 	height: 100%;
 	width: 20%;
 }
-
 h1 {
 	font-size: 100px;
 	margin: 20px auto;
 }
-
 h2 {
-	margin: 0;
+	font-size: 25px;
+	margin: 30px;
 }
-
 p {
 	margin: 0;
 	font-size: 80px;
 }
-
 img {
 	margin: 20px auto;
 	height: 250px;
 	width: 250px;
 	border-radius: 100%;
 }
-
 footer {
 	position: fixed;
 	bottom: 15px;
 	text-align: center;
 	width: 100%;
 }
-
 footer p {
 	font-size: 16px;
 }
-
 a {
 	text-decoration: none;
 	color: inherit;
 	border-bottom: 1px solid black;
 	transition: 0.5s;
 }
-
 a:hover {
 	border-bottom-color: rgba(0,0,0,0);
 }
