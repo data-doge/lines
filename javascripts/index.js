@@ -14,7 +14,7 @@ $(document).ready(function () {
 	function initializeWaves () {
 		for (var i = 0; i < colors.length; i++) {
 			$('header').hide();
-			$('#main').show();
+			$('section').show();
 			initialized = true;
 			var wave = new Wave(colors[i].r, colors[i].g, colors[i].b)
 			wave.initializeLines();
@@ -29,10 +29,22 @@ $(document).ready(function () {
 		}
 	}
 
+	function initializeChars () {
+		for (var i = 0; i < waves.length; i++) {
+			$('#characters').append("<div class='character'></div>");
+		}
+		var charInterval = setInterval(function () {
+			$('.character').each(function (i, character) {
+				$(character).text(randChar());
+			});
+		}, 20);
+	}
+
 	$(document).on('keyup', function (e) {
 		if (e.keyCode === 13) {
 			if (!initialized) {
 				initializeWaves();
+				initializeChars();
 			}
 			resetRotation();
 		}

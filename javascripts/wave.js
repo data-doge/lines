@@ -14,7 +14,7 @@ Wave.prototype.initializeLines = function () {
 };
 
 Wave.prototype.renderLines = function () {
-  $('#main').append(this.$element);
+  $('#waves').append(this.$element);
   for (var i = 0; i < this.lines.length; i++) {
     this.$element.append(this.lines[i]);
   }

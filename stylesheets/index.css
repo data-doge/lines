@@ -1,19 +1,24 @@
 html, body {
-	height: 100%;
 	position: relative;
+	height: 100%;
 }
 body {
 	text-align: center;
 	margin: 0;
-	padding: 20px;
 	font-family: 'Lato';
 }
-#main {
-	display: none;
+section {
 	position: relative;
-	width: 510px;
-	height: 510px;
-	margin: 20px auto;
+	margin: 0 auto;
+	width: 500px;
+	display: none;
+	overflow: auto;
+}
+.character {
+	width: 20%;
+	float: left;
+	font-size: 60px;
+	padding-top: 10px;
 }
 .line {
 	height: 1px;
@@ -21,7 +26,6 @@ body {
 }
 .wave {
 	float: left;
-	height: 100%;
 	width: 20%;
 }
 h1 {
@@ -43,7 +47,7 @@ img {
 	border-radius: 100%;
 }
 footer {
-	position: fixed;
+	position: absolute;
 	bottom: 15px;
 	text-align: center;
 	width: 100%;
