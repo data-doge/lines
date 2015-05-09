@@ -47,12 +47,11 @@ img {
 	border-radius: 100%;
 }
 footer {
-	position: absolute;
-	bottom: 15px;
+	margin-top: 30px;
+	display: none;
+	position: relative;
 	text-align: center;
 	width: 100%;
-}
-footer p {
 	font-size: 16px;
 }
 a {

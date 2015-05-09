@@ -15,6 +15,7 @@ $(document).ready(function () {
 		for (var i = 0; i < colors.length; i++) {
 			$('header').hide();
 			$('section').show();
+			$('footer').show();
 			initialized = true;
 			var wave = new Wave(colors[i].r, colors[i].g, colors[i].b)
 			wave.initializeLines();
@@ -49,4 +50,5 @@ $(document).ready(function () {
 			resetRotation();
 		}
 	});
+
 });
