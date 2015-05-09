@@ -28,22 +28,33 @@ section {
 	float: left;
 	width: 20%;
 }
+header {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
 h1 {
-	font-size: 100px;
-	margin: 20px auto;
+	font-size: 50px;
+	margin: 10px;
 }
 h2 {
 	font-size: 25px;
 	margin: 30px;
 }
+h3 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin: 10px;
+}
 p {
 	margin: 0;
 	font-size: 80px;
 }
-img {
-	margin: 20px auto;
-	height: 250px;
-	width: 250px;
+#kotare {
+	height: 100px;
+	width: 100px;
 	border-radius: 100%;
 }
 footer {
@@ -62,4 +73,11 @@ a {
 }
 a:hover {
 	border-bottom-color: rgba(0,0,0,0);
+}
+#load {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	overflow: auto;
 }
